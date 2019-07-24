@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+ let counter = function(){
+    var count = 0;
+     var counting = function(){
+         count++
+         return count
+     }; 
+     return counting
+ };
+var count1 = counter()
+var count2 = counter()
+console.log(count1())
+console.log(count1())
+console.log(count1())
+console.log(count2())
+console.log(count2())
+console.log(counter()())
+
+    </script>
+</body>
+</html>

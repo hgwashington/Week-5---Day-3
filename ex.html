@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// const figBar = {
+//        name: 'FigBars',
+//        flavor: ['blueberry', 'cherry', 'OG'],
+//        ingredients: {
+//            peanuts: 10,
+//            figs: 2,
+//            chocolate: false
+//        }
+//    }
+// localStorage.bestSnack = JSON.stringify(figBar);
+// localStorage.ingredients = JSON.stringify(figBar.ingredients);
+// const flavors = JSON.parse(localStorage.getItem('bestSnack')).flavor;
+// console.log(flavors);
+// *************************************************************************
+//   const data = [
+//       {name:'John', age:21},
+//       {name:'John', age:21},
+//       {name:'John', age:21},
+//       {name:'John', age:21},
+//       {name:'John', age:21}
+// ]
+// const key = 'userData'
+// sessionStorage[key]=(JSON.stringify(data));
+// console.log(JSON.parse(sessionStorage.getItem(key)));
+
+function giveMeEms(pixels){
+  var baseValue = 16;
+  function doTheMath(){
+      return pixels/baseValue;
+  }
+  return doTheMath;
+}
+var smallSize = giveMeEms(12);
+var mediumSize = giveMeEms(18);
+var largeSize = giveMeEms(24);
+var xLargeSize = giveMeEms(32);
+console.log("small size: ", smallSize());
+console.log("medium size: ", mediumSize());
+console.log("large size: ", largeSize());
+console.log("xLarge size: ", xLargeSize());
+    </script>
+
+</body>
+</html>
