@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//  let counter = function(){
+//     var count = 0; 
+//     deccrement: function(){
+//          count --
+//          return count
+//      }; 
+//     increment: function(){
+//          count ++
+//          return count
+//      }; 
+     
+
+//  };
+ function counter(num){
+   var count = num;
+   var counting = function (x){
+     count+=x;
+   }
+   return {
+   increment: function() {
+     count+=1;
+     return count;
+   },
+   decrement: function() {
+     count-=1;
+      return count;
+   }
+ }
+}
+
+var count = counter(4);
+console.log(count.increment() );
+console.log(count.increment());
+console.log( count.decrement());
+console.log(count.decrement());
+console.log(count.decrement());
+console.log(count.decrement());
+console.log(count.decrement());
+console.log(count.decrement());
+console.log(count.decrement());
+console.log(count.increment());
+
+
+    </script>
+</body>
+</html>
